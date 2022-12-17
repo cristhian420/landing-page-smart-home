@@ -1,5 +1,7 @@
 :root {
   --font-normal: 1.4rem;
+  --black-transparent: rgba(0, 0, 0, 0.392);
+  --smart-green: rgb(101 199 107);
 }
 * {
   font-family: 'Montserrat', sans-serif;
@@ -69,10 +71,21 @@
   border-radius: 8px;
 }
 .actionBtn:hover {
-  background-color: rgba(0, 0, 0, 0.392);
+  background-color: var(--black-transparent);
   color: white;
 }
-
+.section {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  box-shadow: 2px 0 3px black;
+}
+.section span{
+  color: var(--smart-green);
+}
+.title__section {
+  padding-top: .2rem;
+}
 @media screen and (min-width:600px) {
 
   .button__menu-mobile {
