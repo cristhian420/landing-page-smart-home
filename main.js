@@ -7,3 +7,5 @@ date.innerHTML = new Date().getFullYear();
 const navToggle = document.querySelector('.button__menu-mobile');
 const linksContainer = document.querySelector('.link-container');
 const links = document.querySelector('.links');
+
+navToggle.addEventListener()

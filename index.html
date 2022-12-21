@@ -13,17 +13,17 @@
 <body>
   <header id="home">
     <nav id="nav">
-      <div class="nav__center">
-        <div class="nav__mobile">
-          <img src="./assets/logo.svg" alt="logo" srcset="">
-          <button class="button__menu-mobile">
+      <div class="nav-center">
+        <div class="nav-header">
+          <img src="./assets/logo.svg" class="logo" alt="logo" srcset="">
+          <button class="nav-toggle">
             <span class="material-symbols-outlined">
-              menu <a href="#servicios"></a> 
+              menu
               </span>
           </button>
         </div>
 
-          <div class="link-container">
+          <div class="links-container">
             <ul class="links">
               <li>
                 <a href="#home" class="scroll-link">home</a>
@@ -43,31 +43,31 @@
     </nav>
 
     <div class="banner">
-      <div class="containerBanner">
-        <h1 class="title">Haz tu hogar inteligente</h1>
-        <p class="description"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem reprehenderit illo quos fugit. Enim inventore beatae odit itaque reprehenderit quae magni ullam ducimus? Earum perferendis officiis dolor exercitationem vel? Pariatur.</p>
-        <button class="actionBtn" >Ve nuestros paquetes</button>
+      <div class="container">
+        <h1>Haz tu hogar inteligente</h1>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem reprehenderit illo quos fugit. Enim inventore beatae odit itaque reprehenderit quae magni ullam ducimus? Earum perferendis officiis dolor exercitationem vel? Pariatur.</p>
+       <a href="#servicios" class="scroll-link btn btn-white"> Conoce nuestros paquetes</a>
       </div>
     </div>
   </header>
 
   <!-- Casas Automatica (info) -->
   <section class="section" id="info">
-    <div class="title__section">
+    <div class="title">
       <h2>¿Que es una Smart <span>House</span>?</h2>
     </div>
   </section>
 
     <!--Beneficios-->
      <section class="section" id="beneficios">
-       <div class="title__section">
+       <div class="title">
          <h2>Grandes <span>beneficios</span></h2>
        </div>
      </section>
      
     <!--Servicios-->
   <section class="section" id="servicios">
-    <div class="title__section">
+    <div class="title">
       <h2>Nuestros <span>servicios</span></h2>
     </div>
   </section>
@@ -82,8 +82,10 @@
   </footer>
 
   <!--back to top button-->
-  <a href="#home">
-    <span></span>
+  <a href="#home" class="scroll-link top-link show-link">
+    <span class="material-symbols-outlined">
+      arrow_upward
+      </span>
   </a>
   
   <script src="./main.js"></script>
