@@ -194,7 +194,7 @@ Scroll
 /* navbar */
 nav {
   background: var(--clr-white);
-  padding: 1rem 1.5rem;
+  padding: .5rem 1rem;
 }
 /* fixed nav */
 .fixed-nav {

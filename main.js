@@ -20,3 +20,24 @@ navToggle.addEventListener('click', function () {
     linksContainer.style.height = 0;
   }
 });
+
+// fix the nav bar
+const topLink = document.querySelector('.top-link');
+
+window.addEventListener('scroll', function() {
+  console.log(window.pageYOffset);
+  const nav = document.querySelector('#nav');
+  const navHeight = nav.getBoundingClientRect().height;
+
+  if (window.pageYOffset >= navHeight) {
+    nav.classList.add('fixed-nav');
+  } else {
+    nav.classList.remove('fixed-nav')
+  }
+
+  if (window.pageYOffset > 500) {
+    topLink.classList.add('show-link')
+  } else {
+    topLink.classList.remove('show-link')
+  }
+})
