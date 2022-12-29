@@ -52,6 +52,11 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
   --fixed-width: 620px;
+  --small: 1.4rem;
+  --medium: 1.6rem;
+  --big: 1.8rem;
+  --principal-title: 3rem;
+  --second-title: 2rem;
 }
 /*
 =============== 
@@ -70,7 +75,6 @@ html {
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-grey-10);
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -321,7 +325,7 @@ header {
   }
 }
 /* sections and title */
-.title h2 {
+.title {
   text-align: center;
   text-transform: uppercase;
 }
@@ -333,8 +337,8 @@ header {
 #beneficios {
   height: 80vh;
 }
-#servicios {
-  background: var(--clr-white);
+#beneficios {
+  background-color: var(---clr-grey-10);
 }
 footer {
   background: var(--clr-grey-1);
@@ -368,6 +372,126 @@ footer p {
 .show-link {
   visibility: visible;
   z-index: 100;
+}
+.plans-section {
+  width: 100%;
+  height: auto;
+}
+.plans-title-container {
+  width: 90%;
+  padding-bottom: 1rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.plans-title{
+  padding: 1.5rem 0;
+  font-size: var(--principal-title);
+}
+.plans-subtitle{
+  font-size: var(--small);
+}
+.plans-section--main-plans-container {
+  display: flex;
+  height: auto;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+/* .plans-section--main-plans-container::-webkit-scrollbar {
+  background-color: var(--clr-green-dark);
+  height: 3px;
+}
+.plans-section--main-plans-container::-webkit-scrollbar-thumb {
+  background-color: var(--clr-secondary);
+  height: 3px;
+} */
+
+.plans-section--plans-container {
+  position: relative;
+  scroll-snap-align: center;
+  background-color: white;
+  width: 65%;
+  min-width: 20rem;
+  max-width: 30rem;
+  height: 24rem;
+  text-align: center;
+  margin: 5rem auto;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px var(--clr-grey-5);
+  display: flex;
+  flex-direction: column;
+  padding: .8rem;
+}
+.plans-advice {
+  position: absolute;
+  font-family: var(--ff-primary);
+  width: 12rem;
+  height: 3rem;
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary-1);
+  top: -1.5rem;
+  left: calc(50% - 6rem);
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-size: var(--small);
+}
+.plans-type {
+  margin-top: 2rem;
+  font-size: var(--small);
+}
+.plans-cost {
+  margin: 1rem auto;
+  position: relative;
+}
+.plans-cost span {
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+.plans-cost sup {
+  font-size: var(--medium);
+  top: .4rem;
+  left: 4.4rem;
+  position: absolute;
+}
+.plans-description {
+  color: var(--clr-grey-5);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.plans-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--clr-secondary);
+  border-radius: 8px;
+  height: 4.4rem;
+  width: 90%;
+  background-color: var(--clr-primary-1);
+  color: var(--clr-secondary);
+  margin: 0 auto;
+  margin-top: 1rem;
+  font-size: var(--small);
+  letter-spacing: 1.5px;
+  text-decoration: none;
+}
+.plans-icon {
+  background-image: url('./asset/icons/down_lime1.svg');
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat; 
+  margin-left: 4px;
+}
+.plans-button:hover{
+  color: var(--clr-primary-1);
+  background-color: var(--clr-secondary);
+  border: 2px solid var(--clr-primary-1);
+}
+.plans-button:hover span {
+  background-image: url('./asset/icons/down.svg');
 }
 
 @keyframes bounce {
